@@ -280,17 +280,7 @@ The actual output depends on sensor readings and the configured temperature thre
 Note: This workflow represents the current sequential control logic. Temperature monitoring is paused while the program waits for hand removal.
 
 ---
-## 📷 Project Hardware Implementation
 
-<p align="center">
-  <img src="./Images/circuit_connection.jpg"
-       alt="Arduino Smart Hand Washing System - Circuit Connection"
-       width="700">
-</p>
-
-<p align="center">
-  <b>Figure 1: Hardware Implementation of the Proposed System</b>
-</p>
 
 📂 Project Structure
 
