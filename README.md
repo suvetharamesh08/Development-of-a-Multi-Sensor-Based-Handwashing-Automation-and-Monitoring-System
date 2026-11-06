@@ -162,17 +162,8 @@ Libraries Used
 #include <DHT.h>
 
 ---
-## 📷 Project Hardware Implementation
+<img src="Images/circuit_connection.jpg.jpeg" width="700">
 
-<p align="center">
-  <img src="./Images/circuit_connection.jpg"
-       alt="Arduino Smart Hand Washing System - Hardware Setup"
-       width="700">
-</p>
-
-<p align="center">
-  <em>Actual hardware implementation showing Arduino Uno, sensor modules, relay module, buzzer and breadboard connections.</em>
-</p>
 📟 Serial Monitor Output
 
 The Arduino Serial Monitor displays the system's operating status and temperature readings.
