@@ -303,6 +303,18 @@ Smart-Hand-Washing-System/
     └── project_setup.jpg
 
 ---
+## 📷 Project Hardware Implementation
+
+<p align="center">
+  <img src="circuit_connection.jpg.jpeg"
+       alt="Arduino-Based Smart Hand Washing System Hardware Setup"
+       width="700">
+</p>
+
+<p align="center">
+  <em>Hardware implementation of the multi-sensor-based handwashing automation and monitoring system.</em>
+</p>
+
 
 🚀 Applications
 
