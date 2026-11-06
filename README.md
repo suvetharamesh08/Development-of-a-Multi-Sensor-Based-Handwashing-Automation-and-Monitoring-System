@@ -162,10 +162,16 @@ Libraries Used
 #include <DHT.h>
 
 ---
+## 📷 Project Hardware Implementation
+
 <p align="center">
   <img src="./Images/circuit_connection.jpg"
-       alt="Project Hardware Setup"
+       alt="Arduino Smart Hand Washing System - Hardware Setup"
        width="700">
+</p>
+
+<p align="center">
+  <em>Actual hardware implementation showing Arduino Uno, sensor modules, relay module, buzzer and breadboard connections.</em>
 </p>
 📟 Serial Monitor Output
 
