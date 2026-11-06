@@ -1,5 +1,5 @@
 Development of a Multi-Sensor-Based Handwashing Automation and Monitoring System
-📌 Project Overview
+
 
 The Arduino-Based Smart Hand Washing System is an embedded systems project designed to improve hand hygiene through automatic water pump control and environmental temperature monitoring.
 
