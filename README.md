@@ -162,6 +162,17 @@ Libraries Used
 #include <DHT.h>
 
 ---
+## 📷 Project Hardware Implementation
+
+<p align="center">
+  <img src="Images/circuit_connection.jpg"
+       alt="Arduino-Based Smart Hand Washing System"
+       width="700">
+</p>
+
+<p align="center">
+  <em>Hardware implementation of the multi-sensor-based smart handwashing automation system.</em>
+</p>
 
 📟 Serial Monitor Output
 
