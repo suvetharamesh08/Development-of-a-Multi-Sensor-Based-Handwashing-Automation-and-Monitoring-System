@@ -53,7 +53,8 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 5. **Temperature Monitoring:** The DHT11 sensor continuously measures the surrounding temperature and humidity.
 6. **Temperature Alert:** When the temperature reaches or exceeds 33°C, the buzzer is activated.
 7. **Serial Monitoring:** Sensor readings, hand detection status, light conditions, and temperature information are displayed through the Arduino Serial Monitor.
-8. 
+
+ **VIEW Handwashing_Automation_Monitoring**
 ## 📸 Project Output
 
 ### Circuit Connection
