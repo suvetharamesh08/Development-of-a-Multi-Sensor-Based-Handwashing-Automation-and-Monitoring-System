@@ -1,125 +1,90 @@
-**Arduino-Based Smart Hand Washing System**
+🚰 Arduino-Based Smart Hand Washing System
 
-**Project Objectives**
-Automate water-pump operation based on hand detection.
-Control the pump using a relay module.
-Monitor light conditions using an LDR module.
-Measure surrounding temperature using a DHT11 sensor.
-Activate a buzzer when the temperature reaches the configured threshold.
-Display sensor readings and system status in the Serial Monitor.
+** About the Project**
 
- **Key Features**
-Hand detection: Detects a hand using an IR sensor.
-Automatic pump control: Uses a relay module to switch the water pump.
-Timed water flow: Runs the pump for approximately 3 seconds when the programmed conditions are met.
-Light monitoring: Reads the digital output of the LDR module.
-Temperature monitoring: Reads temperature using the DHT11 sensor.
-Buzzer alert: Sounds when the measured temperature reaches the programmed threshold.
-Serial monitoring: Displays sensor readings and operating messages.
+The Arduino-Based Smart Hand Washing System is an embedded systems project designed to automate water control and monitor environmental conditions.
 
- **Working Principle**
-1. Hand Detection
-The IR sensor detects whether a hand is present. In the current program, a LOW signal indicates hand detection, assuming the sensor module has an active-LOW output.
-2. Light Detection
-The Arduino reads the LDR module's digital output. The program uses the configured light condition as part of the pump activation logic.
-3. Water-Pump Control
-When the hand-detection and light conditions are satisfied:
-The Arduino activates the relay.
-The relay switches the water pump ON.
-The pump runs for approximately 3 seconds.
-The Arduino switches the relay OFF.
-The program waits for the hand to be removed before accepting another detection.
-4. Temperature Monitoring
-The DHT11 sensor measures the surrounding temperature. The Arduino reads the value and displays it in the Serial Monitor.
-5. Buzzer Alert
-The program compares the temperature reading with a predefined threshold. When the reading is equal to or greater than that threshold, the buzzer is switched ON; otherwise, it remains OFF.
-## 📷 Circuit Connection
+The system uses an IR sensor to detect hand presence and automatically controls a water pump through a relay module. An LDR sensor monitors light conditions, while a DHT11 sensor measures the surrounding temperature. A buzzer provides an alert when the temperature reaches the predefined threshold.
+
+This project demonstrates the integration of multiple sensors and actuators using an Arduino microcontroller.
+
+ **Features**
+
+- Touchless Water Control: Automatically activates the water pump when a hand is detected.
+- Automatic Pump Control: Controls water flow using a relay module for 3 seconds.
+- Light Monitoring: Detects light conditions using an LDR sensor.
+- Temperature Monitoring: Measures surrounding temperature using a DHT11 sensor.
+- Temperature Alert: Activates a buzzer when the temperature reaches 33°C or above.
+- Serial Monitor Output: Displays hand detection, light status, and temperature readings.
+
+ **Components Used**
+
+- Arduino Uno
+- IR Sensor
+- LDR Sensor Module
+- DHT11 Temperature and Humidity Sensor
+- 1-Channel Relay Module
+- DC Water Pump
+- Buzzer
+- Jumper Wires
+- Breadboard
+- USB Cable
+- External Power Supply (for the water pump, if required)
+
+**How It Works**
+
+1. Hand Detection: The IR sensor detects the presence of a hand.
+2. Water Pump Activation: When a hand is detected, the Arduino activates the relay and turns ON the water pump.
+3. Automatic Water Control: The water pump operates for 3 seconds and then automatically turns OFF.
+4. Light Monitoring: The LDR sensor monitors the surrounding light conditions and displays the status in the Serial Monitor.
+5. Temperature Monitoring: The DHT11 sensor continuously measures the surrounding temperature.
+6. Buzzer Alert: When the temperature reaches 33°C or above, the buzzer is activated.
+7. Serial Monitoring: Sensor readings and system status are displayed through the Arduino Serial Monitor.
+
+ **Circuit Connection**
 
 <p align="center">
-  <img src="circuit_connection.jpg.jpeg" alt="Circuit Connection" width="600">
+  <img src="circuit_connection.jpg.jpeg" alt="Arduino Smart Hand Washing System Circuit Connection" width="600">
 </p>
 
-** Software Requirements**
-Arduino IDE
-Arduino C/C++
-Adafruit DHT Sensor Library
-Adafruit Unified Sensor Library
-Include the DHT library in the Arduino sketch:
-#include <DHT.h>
- **Serial Monitor**
-Open the Arduino Serial Monitor and select 9600 baud to view the sensor readings and system messages.
-Example output (illustrative):
-Light is ON
-Hand Detected
-TEMPERATURE: 29 C
-Buzzer OFF
+**SERIAL MONITOR OUTPUT**
+## 📟 Serial Monitor Output
 
-TEMPERATURE: 33 C
-Buzzer ON
-The actual output depends on the sensor readings and the temperature threshold configured in the sketch.
+<p align="center">
+  <img src="serial_monitor_output.png" alt="Arduino Serial Monitor Output" width="600">
+</p>
 
-** System Workflow**
-             START
-               |
-               v
-        Initialize Sensors
-               |
-               v
-       Read IR and LDR Inputs
-               |
-               v
-    Are Hand and Light Conditions Met?
-           /           \
-         YES            NO
-          |              |
-          v              v
-     Relay ON         Relay OFF
-          |
-          v
-    Pump ON for 3 s
-          |
-          v
-       Relay OFF
-          |
-          v
-   Wait for Hand Removal
-          |
-          v
-    Read Temperature
-          |
-          v
- Temperature >= Threshold?
-       /           \
-     YES            NO
-      |              |
-      v              v
-  Buzzer ON      Buzzer OFF
-       \            /
-        \          /
-          Repeat
+**What I Learned**
 
-** Applications**
-Educational embedded-systems demonstrations
-Touchless water-dispensing prototypes
-Automated hygiene-system prototypes
-Sensor-interfacing and relay-control experiments
+- Understanding Arduino microcontroller programming.
+- Interfacing multiple sensors with Arduino.
+- Working with digital input and output pins.
+- Controlling a DC water pump using a relay module.
+- Understanding IR sensor-based object detection.
+- Monitoring light intensity using an LDR sensor.
+- Measuring temperature using a DHT11 sensor.
+- Implementing conditional statements and timing functions.
+- Displaying real-time sensor data using the Serial Monitor.
+- Integrating hardware components to develop an embedded system.
 
-**Future Improvements**
-Use non-blocking timing so temperature monitoring continues during pump operation.
-Add an LCD or OLED to display temperature and system status.
-Add water-level detection and pump dry-run protection.
-Add IoT connectivity for remote monitoring.
-Improve water conservation with optimized pump-control logic.
-** Learning Outcomes**
-This project provides practical experience with:
-Arduino programming and digital input/output.
-IR and LDR sensor interfacing.
-DHT11 temperature sensing.
-Relay-based load control.
-Buzzer interfacing.
-Serial communication and debugging.
-Combining multiple sensors in an embedded system.
+ **Future Improvements**
 
-** Acknowledgement**
-This project was developed as a hands-on embedded-systems project to explore sensor interfacing, automation, and hardware control using Arduino.
-If you find this project useful, feel free to explore the repository and give it a star!
+- Integrate an LCD display to show real-time sensor readings.
+- Add an ultrasonic sensor for improved hand detection.
+- Implement IoT-based monitoring using ESP32 or Wi-Fi connectivity.
+- Develop a mobile application to monitor system status.
+- Optimize water usage with intelligent pump control.
+- Add water-level monitoring to detect low water conditions.
+
+ **Applications**
+
+- Smart handwashing stations.
+- Touchless water dispensing systems.
+- Smart buildings.
+- Public hygiene facilities.
+- Automated water management systems.
+- Educational embedded systems projects.
+
+---
+
+Developed using Arduino as an embedded systems project.
