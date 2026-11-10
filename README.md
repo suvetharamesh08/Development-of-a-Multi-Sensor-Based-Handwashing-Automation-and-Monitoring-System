@@ -5,7 +5,7 @@ The Arduino-Based Smart Hand Washing System is an embedded systems project desig
 
 The system uses an IR sensor to detect hand presence, an LDR sensor to identify light conditions, a relay module to control the water pump, and a DHT11 sensor to monitor temperature. A buzzer provides an alert when the temperature reaches🚰 Arduino-Based Smart Hand Washing System
 
-📌 Project Overview
+📌 **Project Overview**
 
 The Arduino-Based Smart Hand Washing System is an embedded systems project designed to improve hand hygiene through automatic water pump control and environmental temperature monitoring.
 
@@ -15,7 +15,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-🎯 Project Objectives
+🎯 **Project Objectives**
 
 - To automate water flow using an IR sensor.
 
@@ -31,7 +31,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-✨ Features
+✨ **Features**
 
 - Automatic Hand Detection: Detects hand presence using an IR sensor.
 
@@ -47,58 +47,9 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 - Serial Monitoring: Displays temperature readings and system status.
 
----
 
-🛠️ Hardware Components Required
 
-Component| Quantity
-
-Arduino Uno| 1
-
-IR Sensor Module| 1
-
-LDR Sensor Module| 1
-
-DHT11 Temperature Sensor| 1
-
-1-Channel Relay Module| 1
-
-DC Water Pump| 1
-
-Active Buzzer| 1
-
-Jumper Wires| As required
-
-Breadboard| 1
-
-External Power Supply| 1
-
----
-
-🔌 Pin Connections
-
-Component| Arduino Pin
-
-IR Sensor OUT| Digital Pin 7
-
-LDR Sensor DO| Digital Pin 6
-
-Relay IN| Digital Pin 5
-
-Buzzer (+)| Digital Pin 4
-
-DHT11 DATA| Digital Pin 3
-
-Sensor VCC| 5V
-
-Sensor GND| GND
-
-Note: The relay and sensor modules should be connected according to their operating voltage and signal requirements.
-
----
-
-⚙️ Working Principle
-
+⚙️ **Working Principle
 The system operates through the following steps:
 
 1. Hand Detection
@@ -270,30 +221,6 @@ The actual output depends on sensor readings and the configured temperature thre
 
 Note: This workflow represents the current sequential control logic. Temperature monitoring is paused while the program waits for hand removal.
 
----
-
-
-📂 Project Structure
-
-Smart-Hand-Washing-System/
-
-│
-
-├── README.md
-
-│
-
-├── Hand_Washing_System.ino
-
-│
-
-└── Images/
-
-    ├── circuit_connection.jpg
-
-    └── project_setup.jpg
-
----
 ## 📷 Project Hardware Implementation
 
 <p align="center">
@@ -355,26 +282,6 @@ Through this project, I gained practical knowledge of:
 
 - Serial communication and real-time sensor monitoring.
 
----
-
-👩‍💻 Author
-
-Suvetha R
-
-Electronics and Communication Engineering Student
-
----
-
-⭐ Acknowledgement
-
-This project was developed as a hands-on embedded systems learning project to understand sensor interfacing, automation, and hardware control using Arduino.
-
-If you find this project useful, feel free to explore and star this repository! the configured threshold.
-
-The system combines sensor-based automation with real-time monitoring to provide a simple and efficient hand-washing solution.
-
----
-
 🎯 Project Objectives
 
 - To automate water flow using an IR sensor.
@@ -395,39 +302,6 @@ The system combines sensor-based automation with real-time monitoring to provide
 - Temperature Monitoring: Measures temperature using a DHT11 sensor.
 - Temperature Alert: Activates a buzzer when the temperature reaches the configured threshold.
 - Serial Monitoring: Displays temperature readings and system status.
-
----
-
-🛠️ Hardware Components Required
-
-Component| Quantity
-Arduino Uno| 1
-IR Sensor Module| 1
-LDR Sensor Module| 1
-DHT11 Temperature Sensor| 1
-1-Channel Relay Module| 1
-DC Water Pump| 1
-Active Buzzer| 1
-Jumper Wires| As required
-Breadboard| 1
-External Power Supply| 1
-
----
-
-🔌 Pin Connections
-
-Component| Arduino Pin
-IR Sensor OUT| Digital Pin 7
-LDR Sensor DO| Digital Pin 6
-Relay IN| Digital Pin 5
-Buzzer (+)| Digital Pin 4
-DHT11 DATA| Digital Pin 3
-Sensor VCC| 5V
-Sensor GND| GND
-
-Note: The relay and sensor modules should be connected according to their operating voltage and signal requirements.
-
----
 
 ⚙️ Working Principle
 
@@ -498,102 +372,6 @@ Buzzer ON
 The actual output depends on sensor readings and the configured temperature threshold.
 
 ---
-
-🔄 System Workflow
-
-       START
-         |
-         v
-   Initialize Sensors
-         |
-         v
-    Read IR Sensor
-         |
-         v
-    Read LDR Sensor
-         |
-         v
-  Hand and Light Conditions
-         |
-         v
-    Activate Relay
-         |
-         v
-   Water Pump ON
-         |
-         v
-    Wait 3 Seconds
-         |
-         v
-    Water Pump OFF
-         |
-         v
-   Read Temperature
-         |
-         v
- Temperature >= Threshold?
-       /       \
-     YES        NO
-      |          |
-      v          v
-  Buzzer ON   Buzzer OFF
-       \        /
-         v
-      Repeat
-
-Note: This workflow represents the current sequential control logic. Temperature monitoring is paused while the program waits for hand removal.
-
----
-
-📂 Project Structure
-
-Smart-Hand-Washing-System/
-│
-├── README.md
-│
-├── Hand_Washing_System.ino
-│
-└── Images/
-    ├── circuit_connection.jpg
-    └── project_setup.jpg
-
----
-
-🚀 Applications
-
-- Public washrooms
-- Educational institutions
-- Hospitals and healthcare facilities
-- Offices and workplaces
-- Automated hygiene systems
-
----
-
-🔮 Future Improvements
-
-- Implement continuous temperature monitoring without blocking delays.
-- Introduce an LCD display to show real-time temperature readings.
-- Add an ultrasonic sensor for improved hand detection.
-- Integrate IoT-based monitoring using ESP32.
-- Add water-level monitoring to prevent dry running of the pump.
-- Improve water conservation through optimized pump control.
-
----
-
-📚 Learning Outcomes
-
-Through this project, I gained practical knowledge of:
-
-- Arduino programming and embedded systems.
-- Digital input and output operations.
-- IR and LDR sensor interfacing.
-- Relay-based electrical load control.
-- DHT11 temperature sensor interfacing.
-- Conditional statements and delay functions.
-- Serial communication and real-time sensor monitoring.
-
----
-
 
 
 This project was developed as a hands-on embedded systems learning project to understand sensor interfacing, automation, and hardware control using Arduino.
