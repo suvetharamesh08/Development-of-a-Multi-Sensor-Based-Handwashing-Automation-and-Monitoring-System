@@ -64,11 +64,11 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 
 ### Serial Monitor Output
 
-![Serial Monitor Output](https://github.com/suvetharamesh08/Development-of-a-Multi-Sensor-Based-Handwashing-Automation-and-Monitoring-System/raw/main/serial_monitor_output.png)
+
+
+![Serial Monitor Output](SERIAL%20MONITOR%20OUTPUT.jpeg)
 
 *Figure 2: Real-time sensor readings and system status displayed through the Arduino Serial Monitor.*
-
----
 
 
 
