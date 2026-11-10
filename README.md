@@ -54,8 +54,9 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 6. **Temperature Alert:** When the temperature reaches or exceeds 33°C, the buzzer is activated.
 7. **Serial Monitoring:** Sensor readings, hand detection status, light conditions, and temperature information are displayed through the Arduino Serial Monitor.
 
- README.md
-Handwashing_Automation_Monitoring.ino
+ ## 💻 Arduino Code
+
+[View Arduino Code](./Handwashing_Automation_Monitoring.ino)
 
 ## 📸 Project Output
 
