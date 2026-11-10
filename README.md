@@ -1,17 +1,16 @@
-🚰 Arduino-Based Smart Hand Washing System
-
-<h2 style="font-size:20px;">📌 About the Project</h2>The Arduino-Based Smart Hand Washing System is an embedded systems project designed to automate water control and monitor environmental conditions.
-
+ **Arduino-Based Smart Hand Washing System**
+<h2 style="font-size:20px;"> About the Project</h2>
+The Arduino-Based Smart Hand Washing System is an embedded systems project designed to automate water control and monitor environmental conditions.
 The system uses an IR sensor to detect hand presence and automatically controls a water pump through a relay module. An LDR sensor monitors light conditions, while a DHT11 sensor measures the surrounding temperature. A buzzer provides an alert when the temperature reaches the predefined threshold.
-
 This project demonstrates the integration of multiple sensors and actuators using an Arduino microcontroller.
 
-<h2 style="font-size:20px;">✨ Features</h2>- Touchless Water Control: Automatically activates the water pump when a hand is detected.
-- Automatic Pump Control: Controls water flow using a relay module for 3 seconds.
-- Light Monitoring: Detects light conditions using an LDR sensor.
-- Temperature Monitoring: Measures surrounding temperature using a DHT11 sensor.
-- Temperature Alert: Activates a buzzer when the temperature reaches 33°C or above.
-- Serial Monitor Output: Displays hand detection, light status, and temperature readings.
+<h2 style="font-size:20px;">
+  Features</h2>- Touchless Water Control: Automatically activates the water pump when a hand is detected.
+ Automatic Pump Control: Controls water flow using a relay module for 3 seconds.
+ Light Monitoring: Detects light conditions using an LDR sensor.
+ Temperature Monitoring: Measures surrounding temperature using a DHT11 sensor.
+ Temperature Alert: Activates a buzzer when the temperature reaches 33°C or above.
+ Serial Monitor Output: Displays hand detection, light status, and temperature readings.
 
 <h2 style="font-size:20px;">🔧 Components Used</h2>- Arduino Uno
 - IR Sensor
