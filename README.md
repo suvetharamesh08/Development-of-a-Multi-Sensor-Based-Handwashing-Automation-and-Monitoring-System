@@ -1,6 +1,8 @@
- Arduino-Based Smart Hand Washing System
+**Development-of-a-Multi-Sensor-Based-Handwashing-Automation-and-Monitoring-System**
 
- ##About the Project##
+ **Arduino-Based Smart Hand Washing System**
+
+ **About the Project**
 
 The Arduino-Based Smart Hand Washing System is an embedded systems project designed to automate water control and monitor environmental conditions.
 
@@ -31,8 +33,7 @@ This project demonstrates the integration of multiple sensors and actuators usin
 - USB Cable
 - External Power Supply (for the water pump, if required)
 
-**How It Works**
-
+** **HOW IT WORKS****
 1. Hand Detection: The IR sensor detects the presence of a hand.
 2. Water Pump Activation: When a hand is detected, the Arduino activates the relay and turns ON the water pump.
 3. Automatic Water Control: The water pump operates for 3 seconds and then automatically turns OFF.
@@ -41,14 +42,11 @@ This project demonstrates the integration of multiple sensors and actuators usin
 6. Buzzer Alert: When the temperature reaches 33°C or above, the buzzer is activated.
 7. Serial Monitoring: Sensor readings and system status are displayed through the Arduino Serial Monitor.
 
- **Circuit Connection**
+**** Circuit Connection****
 
 <p align="center">
   <img src="circuit_connection.jpg.jpeg" alt="Arduino Smart Hand Washing System Circuit Connection" width="600">
-</p>
-
-**SERIAL MONITOR OUTPUT**
-## 📟 Serial Monitor Output
+</p>📟 Serial Monitor Output
 
 <p align="center">
   <img src="serial_monitor_output.png" alt="Arduino Serial Monitor Output" width="600">
@@ -76,7 +74,7 @@ This project demonstrates the integration of multiple sensors and actuators usin
 - Optimize water usage with intelligent pump control.
 - Add water-level monitoring to detect low water conditions.
 
- **Applications**
+  **** Applications****
 
 - Smart handwashing stations.
 - Touchless water dispensing systems.
@@ -85,6 +83,6 @@ This project demonstrates the integration of multiple sensors and actuators usin
 - Automated water management systems.
 - Educational embedded systems projects.
 
----
 
-Developed using Arduino as an embedded systems project.
+
+Developed using Arduino as an Embedded Systems Project.
