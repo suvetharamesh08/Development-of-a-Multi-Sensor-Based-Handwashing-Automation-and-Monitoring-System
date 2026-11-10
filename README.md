@@ -1,6 +1,6 @@
 🚰 Arduino-Based Smart Hand Washing System
 
-** About the Project**
+ **About the Projec**t
 
 The Arduino-Based Smart Hand Washing System is an embedded systems project designed to automate water control and monitor environmental conditions.
 
