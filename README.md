@@ -1,11 +1,11 @@
-# 🧼 Arduino-Based Smart Hand Washing System
+#  Arduino-Based Smart Hand Washing System
 
 ### An Intelligent Multi-Sensor-Based Embedded Systems Project
 
 A smart hand washing automation system developed using Arduino Uno, IR sensor, LDR sensor, DHT11 temperature sensor, relay module, and DC water pump. This project demonstrates touchless water control, environmental monitoring, and automated alert mechanisms through sensor integration and embedded systems programming.
 
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Arduino-Based Smart Hand Washing System** is an embedded systems project designed to automate water control and monitor environmental conditions using multiple sensors.
 
@@ -15,7 +15,7 @@ The water pump operates automatically for 3 seconds when a hand is detected, pro
 
 This project demonstrates the integration of multiple sensors and actuators using an Arduino microcontroller for automation and environmental monitoring.
 
-## 🎯 Objectives
+##  Objectives
 
 - Develop a touchless hand washing automation system.
 - Implement automatic water control using an IR sensor.
@@ -26,7 +26,7 @@ This project demonstrates the integration of multiple sensors and actuators usin
 - Display real-time sensor readings through the Serial Monitor.
 - Gain practical experience in multi-sensor interfacing and embedded systems development.
 
-## 🛠️ Components Required
+##  Components Required
 
 | S. No. | Component | Purpose |
 |---|---|---|
@@ -42,7 +42,7 @@ This project demonstrates the integration of multiple sensors and actuators usin
 | 10 | USB Cable | Programs and powers the Arduino |
 | 11 | External Power Supply | Supplies power to the water pump |
 
-## ⚙️ Working Principle
+##  Working Principle
 
 The system operates by integrating multiple sensors with an Arduino Uno microcontroller.
 
@@ -54,11 +54,11 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 6. **Temperature Alert:** When the temperature reaches or exceeds 33°C, the buzzer is activated.
 7. **Serial Monitoring:** Sensor readings, hand detection status, light conditions, and temperature information are displayed through the Arduino Serial Monitor.
 
- ## 💻 Arduino Code
+ ##  Arduino Code
 
 [View Arduino Code](./Handwashing_Automation_Monitoring.ino)
 
-## 📸 Project Output
+## Project Output
 
 ### Circuit Connection
 
@@ -77,7 +77,7 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 
 
 
-## 💻 Software and Tools
+##  Software and Tools
 
 - **Arduino IDE** — For writing, compiling, and uploading the program.
 - **Arduino C/C++** — For programming sensor interfacing and automation.
@@ -85,7 +85,7 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 - **USB Connection** — For uploading the program to the Arduino Uno.
 - **Serial Monitor** — For displaying real-time sensor readings and system status.
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 1. Clone or download this repository.
 2. Open the main Arduino `.ino` file in the Arduino IDE.
@@ -98,41 +98,27 @@ The system operates by integrating multiple sensors with an Arduino Uno microcon
 9. Place your hand near the IR sensor and observe the automatic water pump operation.
 10. Monitor the temperature, humidity, light readings, and buzzer alert.
 
-## 📚 Concepts Learned
+## Concepts Learned
 
 - Understanding Arduino Uno microcontroller programming.
 - Interfacing multiple sensors with a microcontroller.
 - Working with digital input and output pins.
 - Understanding IR sensor-based hand detection.
-- Monitoring light intensity using an LDR sensor.
-- Measuring temperature and humidity using a DHT11 sensor.
-- Controlling a DC water pump using a relay module.
-- Implementing temperature-based alert mechanisms.
-- Using conditional statements and timing functions.
-- Displaying real-time sensor data through the Serial Monitor.
-- Integrating multiple hardware components into an embedded system.
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Integrate an LCD or OLED display to show real-time sensor readings.
 - Add an ultrasonic sensor for improved hand detection.
 - Implement IoT-based monitoring using ESP32 or Wi-Fi connectivity.
 - Develop a mobile application to monitor system status.
-- Optimize water consumption using intelligent pump control.
-- Add water-level monitoring to detect low water conditions.
-- Implement automatic temperature and environmental data logging.
 
-## 🏢 Applications
+
+## Applications
 
 - Smart hand washing stations.
 - Touchless water dispensing systems.
 - Public hygiene facilities.
 - Smart buildings.
 - Automated water management systems.
-- Educational embedded systems projects.
-- Sensor-based automation applications.
 
 
----
-
-**Tags:** `Arduino` `ArduinoUno` `SmartHandWashing` `EmbeddedSystems` `IRSensor` `LDR` `DHT11` `Automation` `IoT` `Electronics`
